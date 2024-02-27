@@ -178,7 +178,7 @@ class SignInViewController: UIViewController {
                 continueBtn.backgroundColor = UIColor.gray
             }
         } else if sender is UIButton && password.count >= 5 && password == confirmPassword {
-            let vc = ViewController()
+            let vc = NotificationViewController()
             navigationController?.pushViewController(vc, animated: true)
         }
     }

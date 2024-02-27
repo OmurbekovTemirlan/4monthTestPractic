@@ -32,7 +32,6 @@ class MakerView {
         label.textAlignment = textAlignment
         label.lineBreakMode = lineBreakMode
         label.translatesAutoresizingMaskIntoConstraints = translatesAutoresizingMaskIntoConstraints
-        
         return label
     }
     
@@ -53,6 +52,7 @@ class MakerView {
         let view = UIView(frame: CGRect(x: 0, y: 0, width: 8, height: 8))
         tf.leftView = view
         tf.leftViewMode = .always
+        let right = UIButton()
         tf.translatesAutoresizingMaskIntoConstraints = false
         return tf
     }
